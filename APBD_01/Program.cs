@@ -2,7 +2,7 @@
 
 class Calculator
 {
-    public static double CalculateAverage(int[] numbers)
+    public static double FindAverage(int[] numbers)
     {
         if (numbers == null || numbers.Length == 0)
         {
@@ -10,11 +10,10 @@ class Calculator
         }
 
         int sum = 0;
-        foreach (int num in numbers)
+        foreach (int value in numbers) 
         {
-            sum += num;
+            sum += value;
         }
-
         return (double)sum / numbers.Length;
     }
     
