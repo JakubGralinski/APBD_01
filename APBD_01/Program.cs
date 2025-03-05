@@ -10,9 +10,9 @@ class Calculator
         }
 
         int sum = 0;
-        foreach (int item in numbers)  // Changed 'num' to 'item'
+        foreach (int number in numbers)  // Unified resolution: using 'number'
         {
-            sum += item;
+            sum += number;
         }
         return (double)sum / numbers.Length;
     }
